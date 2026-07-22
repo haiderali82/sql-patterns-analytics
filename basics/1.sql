@@ -1,0 +1,20 @@
+CREATE DATABASE IF NOT EXISTS school;
+
+DROP DATABASE IF EXISTS school;
+
+CREATE DATABASE IF NOT EXISTS college;
+SHOW DATABASES;
+USE college;
+
+CREATE TABLE class(
+ cid INT PRIMARY KEY,
+ name VARCHAR(50)
+);
+
+INSERT INTO class(cid,name)
+VALUES(1,'Comp'),(2,'Eng'),(3,'Phy');
+
+SELECT * FROM class;
+SHOW TABLES;
+
+DROP DATABASE IF EXISTS college;
