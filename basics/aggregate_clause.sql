@@ -120,3 +120,10 @@ SELECT city, AVG(salary) as avg_salary_of_each_city
 FROM EMPLOYEES
 GROUP BY city
 HAVING AVG(salary) > 55000;
+
+USE metaxols;
+DROP TABLE EMPLOYEES;
+DROP DATABASE metaxols;
+
+USE school;
+SELECT * FROM SECTION;
